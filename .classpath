@@ -5,5 +5,6 @@
 	<classpathentry kind="lib" path="/Users/Brett/Downloads/cucumber-core-1.1.8.jar"/>
 	<classpathentry kind="lib" path="/Users/Brett/Downloads/cucumber-java-1.1.8.jar"/>
 	<classpathentry kind="lib" path="/Users/Brett/Downloads/gherkin-2.12.2.jar"/>
+	<classpathentry kind="lib" path="/Users/Brett/Downloads/junit-4.11.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

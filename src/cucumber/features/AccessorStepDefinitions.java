@@ -1,11 +1,37 @@
 package cucumber.features;
 
+import classes.*;          //import linkedlist and node from classes package
+import java.util.HashMap;
+
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
+import org.junit.Before;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.MockitoAnnotations;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertSame;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
+
 public class AccessorStepDefinitions {
+	
+	LinkedList ll = null;
+	
+	@Mock
+	HashMap<Integer, String> mockMap = Mockito.mock(HashMap.class);
+	
+	@Before
+	public void setUp() throws Exception{
+		ll = new ArrayList<String>();
+		MockitoAnnotations.initMocks(mockMap);
+	}
+	
 	@Given("^a populated linked list$")
 	public void populateLinkedList() throws Throwable {
 	    

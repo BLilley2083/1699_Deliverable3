@@ -1,5 +1,6 @@
-package cucumber;
+package cucumber.features;
 
+import classes.*;          //import linkedlist and node from classes package
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
